@@ -19,4 +19,4 @@ RUN pip install -r app_requirements.txt
 # Define commands when starting container
 CMD ["python", "app.py"]
 ```
-After this Docker file is created, we will have to build the image by typing the command `docker build -t image_name`. The `-t` specify the "tag" or name for the image. Then we can type the magic words `docker run --rm image_name` where the `--rm` means that we remove the container after running it.
+After this Docker file is created, we will have to build the image by typing the commands `docker build -t image_name .`. The `-t` specify the "tag" or name for the image. Then we can type the magic words `docker run --rm image_name` where the `--rm` means that we remove the container after running it.
